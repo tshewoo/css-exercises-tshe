@@ -5,10 +5,72 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link, a:visited {
+color: grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background: lightgrey;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
+}
+
+/* .header > .left-links {
+  display: flex;
+  gap: 16px;
+}
+
+.header > .right-links {
+  display: flex;
+  gap: 16px;
+  margin-right: 20px;
+} */
+
+.content {
+  display:flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 img {
   width: 600px;
+  flex: 1 0 1;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+  margin: 16px;
 }
 
 button {
@@ -18,9 +80,16 @@ button {
   background: #eee;
 }
 
-input {
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 8px 24px;
-  width: 400px;
+
+/* .footer > .left-links {
+  display: flex;
+  gap: 16px;
 }
+
+.footer > .right-links {
+  display: flex;
+  gap: 16px;
+  margin-right: 20px;
+}
+ */
+
